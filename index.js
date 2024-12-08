@@ -20,13 +20,7 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({ storage });
-const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: 'triveni3032@gmail.com', // Replace with your email
-      pass: 'euyl nhcc xsyr wlsb', // Replace with your email password or app password
-    },
-  });
+
 connectedDB();
 
 const corsOptions = {
